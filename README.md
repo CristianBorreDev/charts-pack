@@ -1,38 +1,51 @@
-🎨 charts-pack · Laboratorio Visual
-“Cada número es un reflejo de una historia invisible.”
-— Cristian / Zentrix
+# 🎨 card-visual · Laboratorio Visual
 
-🌙 Descripción
-charts-pack es un módulo visual del ecosistema Cristian / Zentrix, creado dentro del Laboratorio Visual.
-Representa una exploración estética enfocada en la visualización de datos y métricas clave mediante gráficos dinámicos y coherentes.
+> “Las imágenes susurran lo que las palabras callan.”
+> — Cristian / Zentrix
 
-Cada gráfico busca equilibrio entre estructura, emoción y claridad, integrando ritmo visual, paleta oscura y jerarquía tipográfica.
-charts-pack permite mostrar tendencias, comparaciones y proporciones de manera intuitiva, sirviendo como base para futuros sistemas analíticos dentro de Zentrix.
+---
 
-⚙️ Stack
-Capa        | Herramienta
-------------|-------------------------------
-Framework   | Astro
-Componentes | React
-Visualización | Recharts
-Estilos     | TailwindCSS
-Animaciones | Framer Motion / Transiciones CSS
-Íconos      | Lucide Icons
-Fuente      | Inter / sans-serif moderna
+## 🌙 Descripción
 
-🧩 Filosofía
-“Nada se hace por hacer.
-Cada pieza debe poder habitar un sistema,
-y cada sistema debe nacer de una pieza que tiene alma.”
+**card-visual** es un módulo visual del ecosistema **Cristian / Zentrix**, desarrollado dentro del **Laboratorio Visual**.  
+Representa una exploración estética centrada en la **composición visual y narrativa**, donde cada tarjeta combina **imagen, texto y ritmo** para comunicar de forma clara y emocional.
 
-charts-pack no busca cantidad, sino coherencia y exploración.
-Cada gráfico representa una conversación entre datos, diseño y estructura, sirviendo como base para futuros sistemas visuales dentro de Zentrix.
+Su objetivo es servir como base para **sistemas de presentación**, galerías y espacios de identidad dentro de **Zentrix**.
 
-🌌 Autor
-Cristian Borré  
-Diseñador y desarrollador de experiencias digitales.
+Cada componente busca equilibrio entre **estructura, textura y mensaje**, explorando cómo la forma puede transmitir propósito sin necesidad de lógica.
 
-📩 crstnborre@gmail.com  
-🌐 cristian-dev.vercel.app  
+---
 
-© 2025 Cristian — Del laboratorio a la luz.
+## ⚙️ Stack
+
+| Capa | Herramienta |
+|------|--------------|
+| Framework | Astro |
+| Estilos | TailwindCSS |
+| Animaciones | Transiciones CSS / Motion minimal |
+| Íconos | Lucide Icons |
+| Fuente | Inter / sans-serif moderna |
+
+---
+
+## 🧩 Filosofía
+
+> “La forma comunica antes que las palabras.  
+> Cada tarjeta es una historia en silencio.”
+
+**card-visual** no busca cantidad, sino coherencia visual.  
+Es una **exploración de composición y ritmo**, pensada como una pieza esencial para futuros sistemas de interfaz dentro de **Zentrix**.
+
+---
+
+## 🌌 Autor
+
+**Cristian Borré**  
+Diseñador y desarrollador de experiencias digitales.  
+
+📩 [crstnborre@gmail.com](mailto:crstnborre@gmail.com)  
+🌐 [cristian-dev.vercel.app](https://cristian-dev.vercel.app)  
+
+---
+
+© 2025 **Cristian** — *Del laboratorio a la luz.*
