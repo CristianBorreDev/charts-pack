@@ -16,7 +16,8 @@ import {
   PolarGrid,
   PolarAngleAxis,
   PolarRadiusAxis,
-  Radar
+  Radar,
+  ResponsiveContainer
 } from "recharts";
 
 type ChartCardProps = {
@@ -29,52 +30,76 @@ const COLORS = ["#3b82f6", "#10b981", "#f43f5e", "#facc15", "#8b5cf6"];
 
 export default function ChartCard({ title, type, data }: ChartCardProps) {
   return (
-    <div className="bg-gray-900 rounded-2xl p-6 shadow-lg flex flex-col items-center transition-transform transform hover:scale-105 mb-6">
-      <h3 className="text-white text-lg font-semibold mb-4">{title}</h3>
+    <div className="bg-gray-900 rounded-2xl p-4 shadow-lg flex flex-col items-center justify-center transition-transform transform hover:scale-105 mb-6 w-full">
+      <h3 className="text-white text-lg sm:text-xl font-semibold mb-4 text-center">{title}</h3>
 
-      {type === "line" && (
-        <LineChart width={300} height={200} data={data}>
-          <CartesianGrid stroke="#374151" />
-          <XAxis dataKey="name" stroke="#fff" />
-          <YAxis stroke="#fff" />
-          <Tooltip />
-          <Legend />
-          <Line type="monotone" dataKey="value" stroke="#3b82f6" strokeWidth={2} />
-        </LineChart>
-      )}
+      <div className="w-full" style={{ height: 220 }}>
+        {type === "line" && (
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={data}>
+              <CartesianGrid stroke="#374151" />
+              <XAxis dataKey="name" stroke="#fff" />
+              <YAxis stroke="#fff" />
+              <Tooltip />
+              <Legend />
+              <Line type="monotone" dataKey="value" stroke="#3b82f6" strokeWidth={2} />
+            </LineChart>
+          </ResponsiveContainer>
+        )}
 
-      {type === "bar" && (
-        <BarChart width={300} height={200} data={data}>
-          <CartesianGrid stroke="#374151" />
-          <XAxis dataKey="name" stroke="#fff" />
-          <YAxis stroke="#fff" />
-          <Tooltip />
-          <Legend />
-          <Bar dataKey="value" fill="#3b82f6" />
-        </BarChart>
-      )}
+        {type === "bar" && (
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={data}>
+              <CartesianGrid stroke="#374151" />
+              <XAxis dataKey="name" stroke="#fff" />
+              <YAxis stroke="#fff" />
+              <Tooltip />
+              <Legend />
+              <Bar dataKey="value" fill="#3b82f6" />
+            </BarChart>
+          </ResponsiveContainer>
+        )}
 
-      {type === "pie" && (
-        <PieChart width={300} height={200}>
-          <Pie data={data} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={70} label>
-            {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-            ))}
-          </Pie>
-          <Tooltip />
-          <Legend />
-        </PieChart>
-      )}
+        {type === "pie" && (
+          <ResponsiveContainer width="100%" height="100%">
+            <PieChart>
+              <Pie
+                data={data}
+                dataKey="value"
+                nameKey="name"
+                cx="50%"
+                cy="50%"
+                outerRadius={70}
+                label
+              >
+                {data.map((entry, index) => (
+                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                ))}
+              </Pie>
+              <Tooltip />
+              <Legend />
+            </PieChart>
+          </ResponsiveContainer>
+        )}
 
-      {type === "radar" && (
-        <RadarChart cx={150} cy={100} outerRadius={80} width={300} height={200} data={data}>
-          <PolarGrid stroke="#374151" />
-          <PolarAngleAxis dataKey="metric" stroke="#fff" />
-          <PolarRadiusAxis stroke="#fff" />
-          <Radar name={title} dataKey="value" stroke="#3b82f6" fill="#3b82f6" fillOpacity={0.6} />
-          <Tooltip />
-        </RadarChart>
-      )}
+        {type === "radar" && (
+          <ResponsiveContainer width="100%" height="100%">
+            <RadarChart data={data}>
+              <PolarGrid stroke="#374151" />
+              <PolarAngleAxis dataKey="metric" stroke="#fff" />
+              <PolarRadiusAxis stroke="#fff" />
+              <Radar
+                name={title}
+                dataKey="value"
+                stroke="#3b82f6"
+                fill="#3b82f6"
+                fillOpacity={0.6}
+              />
+              <Tooltip />
+            </RadarChart>
+          </ResponsiveContainer>
+        )}
+      </div>
     </div>
   );
 }
