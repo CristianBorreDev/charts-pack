@@ -1,46 +1,38 @@
-# Astro Starter Kit: Basics
+🎨 charts-pack · Laboratorio Visual
+“Cada número es un reflejo de una historia invisible.”
+— Cristian / Zentrix
 
-```sh
-npm create astro@latest -- --template basics
-```
+🌙 Descripción
+charts-pack es un módulo visual del ecosistema Cristian / Zentrix, creado dentro del Laboratorio Visual.
+Representa una exploración estética enfocada en la visualización de datos y métricas clave mediante gráficos dinámicos y coherentes.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Cada gráfico busca equilibrio entre estructura, emoción y claridad, integrando ritmo visual, paleta oscura y jerarquía tipográfica.
+charts-pack permite mostrar tendencias, comparaciones y proporciones de manera intuitiva, sirviendo como base para futuros sistemas analíticos dentro de Zentrix.
 
-## 🚀 Project Structure
+⚙️ Stack
+Capa        | Herramienta
+------------|-------------------------------
+Framework   | Astro
+Componentes | React
+Visualización | Recharts
+Estilos     | TailwindCSS
+Animaciones | Framer Motion / Transiciones CSS
+Íconos      | Lucide Icons
+Fuente      | Inter / sans-serif moderna
 
-Inside of your Astro project, you'll see the following folders and files:
+🧩 Filosofía
+“Nada se hace por hacer.
+Cada pieza debe poder habitar un sistema,
+y cada sistema debe nacer de una pieza que tiene alma.”
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+charts-pack no busca cantidad, sino coherencia y exploración.
+Cada gráfico representa una conversación entre datos, diseño y estructura, sirviendo como base para futuros sistemas visuales dentro de Zentrix.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+🌌 Autor
+Cristian Borré  
+Diseñador y desarrollador de experiencias digitales.
 
-## 🧞 Commands
+📩 crstnborre@gmail.com  
+🌐 cristian-dev.vercel.app  
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+© 2025 Cristian — Del laboratorio a la luz.
