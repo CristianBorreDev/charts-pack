@@ -1,18 +1,18 @@
-# 🎨 card-visual · Laboratorio Visual
+# 🎨 charts-pack · Laboratorio Visual
 
-> “Las imágenes susurran lo que las palabras callan.”
+> “Cada número es un reflejo de una historia invisible.”
 > — Cristian / Zentrix
 
 ---
 
 ## 🌙 Descripción
 
-**card-visual** es un módulo visual del ecosistema **Cristian / Zentrix**, desarrollado dentro del **Laboratorio Visual**.  
-Representa una exploración estética centrada en la **composición visual y narrativa**, donde cada tarjeta combina **imagen, texto y ritmo** para comunicar de forma clara y emocional.
+**charts-pack** es un módulo visual del ecosistema **Cristian / Zentrix**, desarrollado dentro del **Laboratorio Visual**.  
+Representa una exploración estética centrada en la **visualización de datos y métricas**, donde cada gráfico combina **forma, color y proporción** para comunicar información de manera clara y emocional.
 
-Su objetivo es servir como base para **sistemas de presentación**, galerías y espacios de identidad dentro de **Zentrix**.
+Su objetivo es servir como base para **sistemas de métricas, dashboards y paneles de control** dentro de **Zentrix**.
 
-Cada componente busca equilibrio entre **estructura, textura y mensaje**, explorando cómo la forma puede transmitir propósito sin necesidad de lógica.
+Cada componente busca equilibrio entre **estructura, ritmo y significado**, explorando cómo los números pueden convertirse en un lenguaje visual con propósito y armonía.
 
 ---
 
@@ -21,8 +21,10 @@ Cada componente busca equilibrio entre **estructura, textura y mensaje**, explor
 | Capa | Herramienta |
 |------|--------------|
 | Framework | Astro |
+| Componentes | React |
+| Visualización | Recharts |
 | Estilos | TailwindCSS |
-| Animaciones | Transiciones CSS / Motion minimal |
+| Animaciones | Framer Motion / Transiciones CSS |
 | Íconos | Lucide Icons |
 | Fuente | Inter / sans-serif moderna |
 
@@ -30,11 +32,11 @@ Cada componente busca equilibrio entre **estructura, textura y mensaje**, explor
 
 ## 🧩 Filosofía
 
-> “La forma comunica antes que las palabras.  
-> Cada tarjeta es una historia en silencio.”
+> “Los datos cuentan historias que solo la forma puede revelar.  
+> Cada gráfico es un diálogo entre diseño y métrica.”
 
-**card-visual** no busca cantidad, sino coherencia visual.  
-Es una **exploración de composición y ritmo**, pensada como una pieza esencial para futuros sistemas de interfaz dentro de **Zentrix**.
+**charts-pack** no busca cantidad, sino coherencia y exploración.  
+Es una **investigación visual de patrones y relaciones**, pensada como una pieza esencial para futuros sistemas de interfaz y análisis dentro de **Zentrix**.
 
 ---
 
