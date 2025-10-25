@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Usuarios Activos Semanales",
+    "type": "line",
+    "data": [
+      { "name": "Semana 1", "value": 50 },
+      { "name": "Semana 2", "value": 75 },
+      { "name": "Semana 3", "value": 65 },
+      { "name": "Semana 4", "value": 90 }
+    ]
+  },
+  {
+    "title": "Ventas por Producto",
+    "type": "bar",
+    "data": [
+      { "name": "Producto A", "value": 120 },
+      { "name": "Producto B", "value": 150 },
+      { "name": "Producto C", "value": 80 },
+      { "name": "Producto D", "value": 200 }
+    ]
+  },
+  {
+    "title": "Distribución de Productos",
+    "type": "pie",
+    "data": [
+      { "name": "Producto A", "value": 30 },
+      { "name": "Producto B", "value": 50 },
+      { "name": "Producto C", "value": 20 }
+    ]
+  },
+  {
+    "title": "KPIs del Laboratorio",
+    "type": "radar",
+    "data": [
+      { "metric": "Diseño", "value": 80 },
+      { "metric": "Funcionalidad", "value": 70 },
+      { "metric": "UI/UX", "value": 90 },
+      { "metric": "Innovación", "value": 75 },
+      { "metric": "Performance", "value": 85 }
+    ]
+  }
+]

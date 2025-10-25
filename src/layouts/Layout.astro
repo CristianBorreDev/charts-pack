@@ -1,22 +1,36 @@
+---
+import "../styles/global.css";
+---
+
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="en" class="bg-[#0B0D0E] text-gray-100 antialiased">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Charts Pack · Cristian Labs</title>
+  </head>
+  <body class="relative overflow-x-hidden">
+    <!-- Sutil textura visual -->
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(123,92,255,0.05),transparent_70%)] pointer-events-none"
+    >
+    </div>
+
+    <main
+      class="relative z-10 w-full h-full flex flex-col items-center justify-center px-8"
+    >
+      <slot />
+    </main>
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>
